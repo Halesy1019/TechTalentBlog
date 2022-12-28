@@ -23,6 +23,10 @@ public class BlogPostController {
 	// Handles GET requests at {baseurl}/blogpost/
 	@GetMapping(value="/")
     public String index(BlogPost blogPost, Model model) {
+		posts.removeAll(posts);
+	    for (BlogPost post : blogPostRepository.findAll()) {
+	    	posts.add(post);
+	    }
 		model.addAttribute("posts", posts);
 		return "blogpost/index.html";
     }
