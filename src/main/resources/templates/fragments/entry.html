@@ -16,7 +16,7 @@
 <div th:fragment="entry-footer">
   <div class="panel-footer">
     <div class="card-footer">
-      <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
+      <a href="#" th:href="@{blogposts/update/{id}(id=${blog.id})}">
         <button class="btn btn-light">Edit Post</button>
       </a>
     </div>
@@ -32,7 +32,6 @@
       <div class="form-group">
         <input type="hidden" name="_method" value="delete" />
         <button type="submit" class="btn btn-danger btn-block" th:text="Delete">
-          <!-- Delete -->
           <div class="card-footer">
             <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
               <button class="btn btn-light">Edit Post</button>
