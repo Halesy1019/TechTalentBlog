@@ -73,18 +73,6 @@ public class BlogPostController {
 		return "blogpost/edit.html";
 	}
 
-	// @RequestMapping(value = "/blogposts/update/{id}")
-	// public String editPostById(@PathVariable Long id, BlogPost blogPost, Model
-	// model){
-	// Optional<BlogPost> post = blogPostRepository.findById(id);
-	// if (post.isPresent()) {
-
-	// return "blogpost/edit.html";
-	// }
-	// return "blogpost/index.html";
-
-	// }
-
 	@PostMapping(value = "/blogposts/update/{id}")
 	public String updateExistingPost(@PathVariable Long id, BlogPost blogPost, Model model) {
 		Optional<BlogPost> post = blogPostRepository.findById(id);
@@ -99,11 +87,5 @@ public class BlogPostController {
 
 		return "blogpost/result.html";
 	}
-
-	// @RequestMapping(value = "/blogposts/delete/{id}")
-	// public String deletePostById(@PathVariable Long id, BlogPost blogPost) {
-	// blogPostRepository.deleteById(id);
-	// return "blogpost/delete.html";
-	// }
 
 }
