@@ -16,34 +16,29 @@
 <div th:fragment="entry-footer">
   <div class="panel-footer">
     <div class="card-footer">
+      <!-- Link to Update -->
+
       <a href="#" th:href="@{blogposts/update/{id}(id=${blog.id})}">
         <button class="btn btn-light">Edit Post</button>
       </a>
-    </div>
-    <!-- Link to Update -->
-    <!-- Link to Show  -->
-    <!--  Link to Destroy -->
-    <form
-      action="#"
-      th:action="@{'/blogposts/{id}'(id=${blog.id})}"
-      th:method="delete"
-      class="form-horizontal"
-    >
-      <div class="form-group">
-        <input type="hidden" name="_method" value="delete" />
-        <button type="submit" class="btn btn-danger btn-block" th:text="Delete">
-          <div class="card-footer">
-            <a href="#" th:href="@{blogposts/{id}(id=${blog.id})}">
-              <button class="btn btn-light">Edit Post</button>
-            </a>
-            <a href="#" th:href="@{blogposts/delete/{id}(id=${blog.id})}">
-              <button class="btn btn-danger" type="submit">Delete Post</button>
-            </a>
-          </div>
-        </button>
-      </div>
-    </form>
+      <!-- Link to Show  -->
 
-    <!-- Buttons -->
+      
+      <!--  Link to Destroy -->
+      <form
+        action="#"
+        th:action="@{'/blogposts/{id}'(id=${blog.id})}"
+        th:method="delete"
+        class="form-horizontal"
+      >
+        <div class="form-group">
+          <button
+            type="submit"
+            class="btn btn-danger btn-block"
+            th:text="Delete"
+          ></button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
