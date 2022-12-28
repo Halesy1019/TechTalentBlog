@@ -88,7 +88,7 @@ public class BlogPostController {
 		return "blogpost/result.html";
 	}
 
-	@RequestMapping(value = "blogposts/delete/{id}")
+	@RequestMapping(value = "/blogposts/delete/{id}")
 	public String deletePostById(@PathVariable Long id, BlogPost blogPost) {
 		blogPostRepository.deleteById(id);
 		return "blogpost/delete.html";
