@@ -5,10 +5,26 @@
   * [Installation](#installation)
   * [Usage](#usage)
   * [Licenses](#licenses)
-  * [Contributing](#contributing)
   * [Tests](#tests)
-  * [Questions](#questions)
+  * [Contributors](#contributors)
   * [Credits](#credits)
+  * [Languages](#languages)
+  
+  <br>
+  
+  ![](pictures/HomePage.png)
+  
+  <br>
+  
+   ![](pictures/Post.png)
+   
+    <br>
+  
+   ![](pictures/Edit.png)
+   
+   <br>
+   
+   ![](pictures/DeletePopUp.png)  
   
   
    ## Description
@@ -36,17 +52,12 @@
   NA
   
   
-  ## Questions
-  Have questions about this project?  
-  Haley GitHub: https://github.com/Halesy1019  
-  Joshua GitHub: https://github.com/cooljoebob64
-  Yamba GitHub: https://github.com/yambaO
+  ## Contributors  
+  https://github.com/Halesy1019, https://github.com/cooljoebob64, https://github.com/yambaO
   
   
   ## Credits
-  Haley
-  Yamba 
-  Joshua 
+  Haley, Yamba, Joshua 
   
   
    ## Languages
